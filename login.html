@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход/регистрация</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+</head>
+<body>
+<div class="block_page_dark">
+    <a href="/index.html"><img class="logotype" src="/images/logo.png" width="164" height="56" title="Главная" alt="Ошибка загрузки"></a></li>
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="/study.html">Учеба</a></li>
+            <li><a href="/gallery.html">Галерея</a></li>
+            <li><a href="/bio.html">Биография</a></li>
+            <li><a href="/achievments.html">Достижения</a></li>
+            <li><a href="/registr.html">Регистрация</a></li>
+            <li><a href="/login.html">Вход</a></li>
+        </ul>
+    </div>
+    <div class="adap_menu_lines">
+        <span></span>
+    </div>
+</div>
+<div class="main_content">
+    <div class="entrance">
+        <h2 align="center">Вход в аккаунт</h2>
+        <form action="core/signin.php" method="post" enctype="multipart/form-data">
+            <div class="form-entrance">
+                <label for="username">Логин</label>
+                <input type="text" id="username" name="user_name" required="required"/>
+            </div>
+            <div class="form-entrance">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="user_password" required="required"/>
+            </div>
+            <div class="form-entrance">
+                <button type="submit" name="submit">Войти</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+<div class="block_page_dark">
+    <div class="bottom">
+        <p align="center">Сайт разработан в рамках выполнения лабораторной работы в 2022 году</p>
+    </div>
+</div>
+</body>

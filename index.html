@@ -6,8 +6,27 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="/styles/styles.css">
     <meta name="viewpoint" content="width=device-width">
+    <script src="/scripts/jquery-3.6.0.js"></script>
+    <script src="/scripts/menu.js"></script>
 </head>
 <body>
+<div class="block_page_dark">
+    <a href="/index.html"><img class="logotype" src="/images/logo.png" width="164" height="56" title="Главная" alt="Ошибка загрузки"></a></li>
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="/study.html">Учеба</a></li>
+            <li><a href="/gallery.html">Галерея</a></li>
+            <li><a href="/bio.html">Биография</a></li>
+            <li><a href="/achievments.html">Достижения</a></li>
+            <li><a href="/registr.html">Регистрация</a></li>
+            <li><a href="/login.html">Вход</a></li>
+        </ul>
+    </div>
+    <div class="adap_menu_lines">
+        <span></span>
+    </div>
+</div>
 <div class ="main_content">
     <div class="startblock">
         <div class="startblockshadow">
@@ -16,12 +35,6 @@
         </div>
     </div>
     <div class="block_page contactsbox">
-        <?php
-        if ($_SESSION['message']) {
-            echo '<p class = "msg">' . $_SESSION['message'] . '</p>';
-        }
-        unset($_SESSION['message']);
-        ?>
         <h2 align="center">Мои контакты</h2>
         <table align="center" class="contacts">
             <tr>
@@ -73,8 +86,11 @@
         </div>
 
     </div>
-    <p class = "mpageresum" align="center">Более подробная информация обо мне указана в разделе <a href="/bio.php">Биография</a>, а о моей нынешней деятельности - в разделе <a href="/study.php">Учеба</a>.</p>
-
-
-
+    <p class = "mpageresum" align="center">Более подробная информация обо мне указана в разделе <a href="/bio.html">Биография</a>, а о моей нынешней деятельности - в разделе <a href="/study.html">Учеба</a>.</p>
 </div>
+<div class="block_page_dark">
+    <div class="bottom">
+        <p align="center">Сайт разработан в рамках выполнения лабораторной работы в 2022 году</p>
+    </div>
+</div>
+</body>
